@@ -6,11 +6,11 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css'; // here we import bootstrap
 // From here i will import my files like above line
 
-import Sample from './practice/Sample';                                 //This is for Defalut Export
+// import Sample from './practice/Sample';                                 //This is for Defalut Export
 
 // import { Sample1 } from './practice/Sample1';                           //This is for Named Export
 
-// import Tables from './practice/Tables';                                 // This is for importing Tables (Task)
+import Tables from './practice/Tables';                                 // This is for importing Tables (Task)
 
 // import Home from './practice/homeComp';
 
@@ -82,13 +82,13 @@ root.render(
     {/* <App /> */}
     {/* From here i will import my files like above line */}
 
-    <Sample />       
+    {/* <Sample />        */}
     {/* This is for default export */}
 
     {/* <Sample1 />      */}
     {/* This is for Named Export */}
 
-    {/* <Tables/> */}
+    <Tables/>
     {/* This is for Tables (Task) */}
 
     {/* <Home/> */}
