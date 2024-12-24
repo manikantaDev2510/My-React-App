@@ -1,0 +1,17 @@
+.switchon {
+    background-color: chartreuse;
+    color: aliceblue;
+}
+
+.switchoff {
+    background-color: red;
+    color: aliceblue;
+}
+
+.textoff {
+    color: greenyellow
+}
+
+.texton {
+    color: red;
+}

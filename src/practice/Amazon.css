@@ -1,0 +1,23 @@
+header{
+display: flex;
+justify-content: space-between;
+gap: 30px;
+background-color: #4CAF50;
+color: aliceblue;
+padding: 10px;
+text-align: center;
+}
+img{
+    height:500px;
+    width:500px
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
