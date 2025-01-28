@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import axios from "axios";
-import Profilecart from "./Profilecart";
+import Profilecart from "../Profilecart";
 import { Spinner } from "react-bootstrap"; // Ensure you're using only one import
 
-class Updating_State extends Component {
+class UpdatingState extends Component {
   constructor() {
     super();
     this.state = { count: 0, product: null, loading: false, error: null };
@@ -64,4 +64,4 @@ class Updating_State extends Component {
   }
 }
 
-export default Updating_State;
+export default UpdatingState;

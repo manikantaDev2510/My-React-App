@@ -1,5 +1,5 @@
 import { Component } from "react";
-import back from "../assets/images/"
+import back from "../../assets/images/galaxy.jpg"
 // This is for importing image
 
 class Mani extends Component {

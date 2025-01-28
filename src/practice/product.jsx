@@ -1,7 +1,7 @@
 import { Component } from "react";
 import "./product.css";
 import mobile from "../assets/images/iphone.jpg";
-import laptop from "../assets/images/lpt3.jpg";
+import laptop from "../assets/images/Laptop3.jpg";
 import camera from "../assets/images/cam1.jpeg";
 import watch from "../assets/images/watch2.jpeg"
 

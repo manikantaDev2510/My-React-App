@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 
-function Unmounting_State(){
+function UnmountingState(){
     return(
         <h1>
            UN Mounting_State
@@ -8,4 +8,4 @@ function Unmounting_State(){
     );
 }
 
-export default Unmounting_State;
+export default UnmountingState;

@@ -6,75 +6,82 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css'; // here we import bootstrap
 // From here i will import my files like above line
 
-// import Sample from './practice/Sample';                                 //This is for Defalut Export
+import Sample from './practice/Export/Sample';                                 //This is for Defalut Export
 
-// import { Sample1 } from './practice/Sample1';                           //This is for Named Export
+import { Sample1 } from './practice/Export/Sample1';                           //This is for Named Export
 
-import Tables from './practice/Tables';                                 // This is for importing Tables (Task)
+import Tables from './practice/Css Table/Tables';                                 // This is for importing Tables (Task)
 
-// import Home from './practice/homeComp';
+import Home from './practice/Components/homeComp';
 
-// import Amazon from './practice/Amazon';
+import Amazon from './practice/Amazon';
 
-// import Functioncomp from './practice/Functioncomp';
+import Product from './practice/product';
 
-// import Props from './practice/Props';                                   // Properly importing Props component
+import Functioncomp from './practice/Functioncomp';
 
-// import Propsclass from './practice/Prposclass';                         //This is for Class Props
+import Props from './practice/Props/Props';                                   // Properly importing Props component
 
-// import Prop from './practice/Prop'                                      //This for props
+import Propsclass from './practice/Props/Prposclass';                         //This is for Class Props
 
-// import Butto from './practice/Bootstrap';
+import Prop from './practice/Props/Prop'                                      //This for props
 
-// import Profilecart from './practice/Profilecart'
+import Butto from './practice/Bootstrap';
 
-// import Accordian from './practice/Accordion';
+import Profilecart from './practice/Profilecart'
 
-// import CondRend from './practice/CondRend';                            // This is for Condition Rendering
-// import CondRendTask from './practice/CondRendTask';                    // This is task on CondRendTask
+import Accordian from './practice/Accordion';
 
-// import Parent from './practice/ParentComp';                            // This is for Parent Component
+import CondRend from './practice/CondRend';                            // This is for Condition Rendering
+import CondRendTask from './practice/CondRendTask';                    // This is task on CondRendTask
 
-// import Swiggy from './practice/Swiggy';                                // This is for parent and nested child example
+import Parent from './practice/Parent-Child/ParentComp';                            // This is for Parent Component
 
-// import Counter from './practice/Counter';                              // This is for counting numbers
+import Swiggy from './practice/Swiggy/Swiggy';                                // This is for parent and nested child example
 
-// import Switch from './practice/Switch';                                // This is for switch
+import Counter from './practice/Counter';                              // This is for counting numbers
 
-// import Form from './practice/Form';                                    // This is for forms
+import Switch from './practice/Switch';                                // This is for switch
 
-// import Todo from './practice/Todo';                                    // This is for Todo
+import Form from './practice/Form';                                    // This is for forms
 
-// import Spinners from './practice/Spinner';                             // This is for Spinners
+import Todo from './practice/Todo';                                    // This is for Todo
+import Todocard from './practice/Todocard';
 
-// import Mounting_State from './practice/Mounting_State';
-// import Updating_State from './practice/Updating_State';
-// import Unmounting_State from './practice/Unmounting_State';            // These are for life cycle
+import Spinners from './practice/Spinner';                             // This is for Spinners
 
-// import FuncLifeCycle from './practice/FunctionCom';
+import Mainpage from './practice/Fire Base/mainpage';
 
-// import CountFc from './practice/CounterFunction';
+import MountingState from './practice/Life Cycle/Mounting_State';
+import UpdatingState from './practice/Life Cycle/Updating_State'; 
+import UnmountingState from './practice/Life Cycle/Unmounting_State';                // These are for life cycle
+
+import FuncLifeCycle from './practice/FunctionCom';
+
+import CountFc from './practice/CounterFunction';
 
 // import Calculator from './practice/Calculator';
 
-// import FormComp from './practice/FormComp';
+import FormComp from './practice/FormComp';
 
-// import Buttoncount from './practice/ButtonCount';
+import Buttoncount from './practice/ButtonCount';
 
 // import LoginComp from './practice/LoginComp';
 
-// import UseEffect from './practice/UseEffect';
+import UseEffect from './practice/UseEffect';
 
-// import Rout from './practice/RoutingComp/Router';
+import Rout from './practice/RoutingComp/Router';
 
-// import DynMov from './practice/DynamicRouting/DynMov';
+import DynMov from './practice/DynamicRouting/DynMov';
 
-// import MemoHook from './practice/Hooks/memohook';
-// import CallBackHook from './practice/Hooks/callbackhook';
+import MemoHook from './practice/Hooks/memohook';
+import CallBackHook from './practice/Hooks/callbackhook';
 
-// import ParentComp from './practice/Hooks/Context Hook/parentComp';
+import ParentComp from './practice/Hooks/Context Hook/parentComp';
 
 // import FormValid from './practice/Hooks/custom hooks/formValid';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -88,7 +95,7 @@ root.render(
     {/* <Sample1 />      */}
     {/* This is for Named Export */}
 
-    <Tables/>
+    {/* <Tables/> */}
     {/* This is for Tables (Task) */}
 
     {/* <Home/> */}
@@ -101,12 +108,12 @@ root.render(
     {/* <Functioncomp/> */}
     {/* This is for Cart */}
 
-    {/* <Props name="Manikanta" city="HYD"/> */}
-    {/* <Props name="Mohan" city="Chennai"/> */}
+    {/* <Props name="Manikanta" city="HYD"/>
+    <Props name="Mohan" city="Chennai"/> */}
     {/* This is for normal props */}
 
-    {/* <Propsclass name="Balu"/> */}
-    {/* <Propsclass name="Mahesh"/> */}
+    {/* <Propsclass name="Balu"/>
+    <Propsclass name="Mahesh"/> */}
     {/* This is for Class props */}
 
     {/* <Prop>
@@ -145,15 +152,16 @@ root.render(
     {/* This is for Forms */}
 
     {/* <Todo/> */}
+    <Todocard/>
     {/* This is for Todo */}
 
     {/* <Spinners/> */}
     {/* This is for spinners */}
 
     {/* Life cycle */}
-    {/* <Mounting_State/> */}
-    {/* <Updating_State/> */}
-    {/* <Unmounting_State/> */}
+    {/* <MountingState/>
+    <UpdatingState/>
+    <UnmountingState/> */}
 
     {/* <FuncLifeCycle/> */}
 
@@ -174,14 +182,17 @@ root.render(
     {/* <DynMov/> */}
     {/* For Dynamic routing */}
 
-    {/* Hoks */}
-    {/* <MemoHook/> */}
-    {/* <CallBackHook/> */}
+    {/* Hooks */}
+    {/* <MemoHook/>
+    <CallBackHook/> */}
 
     {/* Context Api */}
     {/* <ParentComp/> */}
 
     {/* <FormValid/> */}
+
+     {/* Fire Base */}
+    {/* <Mainpage/> */}
   </React.StrictMode>
 );
 

@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 // import Spinner from "react-bootstrap/Spinner";
 
 
-class Mounting_State extends Component {
+class MountingState extends Component {
     constructor() {
         super();
         console.log("Constructing");
@@ -59,4 +59,4 @@ class Mounting_State extends Component {
     }
 }
 
-export default Mounting_State;
+export default MountingState;

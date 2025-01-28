@@ -1,19 +1,45 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { createUserWithEmailAndPassword, getAuth } from 'firebase/auth';
+import { app } from './firebaseCong';
 
 export default function Signup() {
-    const [email,setEmail]=useState("")
-    const [password,setPassword]=useState("")
-    const handleSubmit=(e)=>{
-        e.preventDefault();
-        
+  const signUpDoneWithFireBase = getAuth(app);
+  const route = useNavigate();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleSubmit = async (e) => { // Marking the function as async
+    e.preventDefault();
+    try {
+      let a = await  createUserWithEmailAndPassword(signUpDoneWithFireBase, email, password);
+      alert('Sign up done successfully');
+      console.log(a);
+    } catch (error) {
+      console.log(error);
     }
+    route('/login');
+    setEmail('');
+    setPassword('');
+  };
+
   return (
-    <div>Signup
-        <form onSubmit={handleSubmit}>
-        <input type="email" name="" placeholder="enter email here" onChange={(e)=>setEmail(email.target)} value={email}/>
-        <input type="password" name="" placeholder="enter password here" onChange={(e)=>setPassword(password.target)} value={password}/>
+    <div>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="email"
+          placeholder="Enter email here"
+          onChange={(e) => setEmail(e.target.value)}
+          value={email}
+        />
+        <input
+          type="password"
+          placeholder="Enter password here"
+          onChange={(e) => setPassword(e.target.value)}
+          value={password}
+        />
         <button>Signup</button>
-        </form>
+      </form>
     </div>
-  )
+  );
 }

@@ -297,5 +297,3 @@ function Profilecart() {
   );
 }
 export default Profilecart;
-
-

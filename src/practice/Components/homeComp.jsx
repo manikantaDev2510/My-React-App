@@ -9,11 +9,11 @@ import Mani from "./mainComp";
 class Home extends Component {
   render() {
     return (
-      <>
+        <div>
         <HeaderComp />
         <Mani/>
         <Footer />
-      </>
+        </div>
     );
   }
 }
